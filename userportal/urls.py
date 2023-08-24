@@ -78,3 +78,5 @@ if 'usersummary' in settings.INSTALLED_APPS:
 
 if 'quotasgpfs' in settings.INSTALLED_APPS:
     urlpatterns.append(path('secure/quotasgpfs/', include('quotasgpfs.urls')))
+if 'search' in settings.INSTALLED_APPS:
+    urlpatterns.append(path('secure/search/', include('search.urls')))
